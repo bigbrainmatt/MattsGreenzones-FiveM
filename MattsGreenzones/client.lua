@@ -62,4 +62,12 @@ CreateThread(function()
             onExit = exitGreenZone
         })
     end
+
+    while inGreenZone do 
+        if inGreenZone then
+            SetEntityProofs(ped, true, true, true, true, true, true, true, true)
+        else
+            SetEntityProofs(ped, false, false, false, false, false, false, false, false)
+        end   
+    end 
 end)
